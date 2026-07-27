@@ -512,6 +512,70 @@ a {
     border: 1px solid var(--border-color);
 }
 
+/* Project Highlights */
+.project-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: rgba(99, 102, 241, 0.05);
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.highlight-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.highlight-item i {
+    color: var(--primary-color);
+    margin-top: 2px;
+    min-width: 16px;
+}
+
+.highlight-item strong {
+    color: var(--text-primary);
+}
+
+/* Project Links */
+.project-links {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-top: auto;
+}
+
+.project-links .btn-project {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: var(--radius-md);
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all var(--transition-fast);
+    text-decoration: none;
+}
+
+.project-links .btn-project:hover {
+    background: var(--primary-color);
+    color: var(--bg-dark);
+}
+
+.enterprise-btn {
+    background: var(--bg-darker) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-muted) !important;
+    cursor: not-allowed;
+}
+
 /* ===== Skills Section ===== */
 .skills-section {
     padding: var(--spacing-3xl) 0;

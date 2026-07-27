@@ -15,7 +15,8 @@ PROJECTS = [
         'icon': 'fa-robot',
         'category': 'LLM & RAG System',
         'description': 'Inférence structurée sur LLM combinant RAG, prompt engineering et contraintes sur logits pour générer des appels de fonctions JSON stricts.',
-        'tags': ['Python', 'LLM (Qwen3)', 'RAG', 'Constrained Decoding', 'HuggingFace', 'Pydantic']
+        'tags': ['Python', 'LLM (Qwen3)', 'RAG', 'Constrained Decoding', 'HuggingFace', 'Pydantic'],
+        'github_url': 'https://github.com/fabio-biot/call_me_maybe'
     },
     {
         'name': 'quant_leo_fabio',
@@ -24,7 +25,8 @@ PROJECTS = [
         'icon': 'fa-calculator',
         'category': 'Quant Stack & ML',
         'description': 'Engine quantitatif complet : collecte de données financières, scoring alpha par modèles ML, backtesting de stratégies.',
-        'tags': ['Python', 'XGBoost/CatBoost', 'Backtesting', 'SQLite', 'Finance', 'Feature Engineering']
+        'tags': ['Python', 'XGBoost/CatBoost', 'Backtesting', 'SQLite', 'Finance', 'Feature Engineering'],
+        'github_url': 'https://github.com/fabio-biot/Quant_leo_fabio'
     },
     {
         'name': 'michelin',
@@ -33,7 +35,8 @@ PROJECTS = [
         'icon': 'fa-truck',
         'category': 'Logistics VRP Optimization',
         'description': 'Plateforme d\'optimisation de routes logistiques avec solver VRP pour minimiser l\'empreinte CO2.',
-        'tags': ['FastAPI', 'Python', 'VRP Solver', 'Haversine', 'JavaScript', 'SQLite']
+        'tags': ['FastAPI', 'Python', 'VRP Solver', 'Haversine', 'JavaScript', 'SQLite'],
+        'github_url': 'https://github.com/fabio-biot/michelin_leo'
     },
     {
         'name': 'alpha_',
@@ -42,7 +45,8 @@ PROJECTS = [
         'icon': 'fa-chart-line',
         'category': 'Financial API & Web Dashboard',
         'description': 'Application web et API de données financières temps réel avec architecture FastAPI.',
-        'tags': ['FastAPI', 'Python', 'yfinance', 'SQLAlchemy', 'Jinja2']
+        'tags': ['FastAPI', 'Python', 'yfinance', 'SQLAlchemy', 'Jinja2'],
+        'github_url': 'https://github.com/fabio-biot/alpha_'
     },
     {
         'name': 'flyin',
@@ -51,7 +55,8 @@ PROJECTS = [
         'icon': 'fa-plane-departure',
         'category': 'Drone Delivery Simulation',
         'description': 'Simulation Python de réseaux de livraison par drones avec algorithmes de pathfinding.',
-        'tags': ['Python', 'Graph Theory', 'Pathfinding', 'Simulation', 'Visualization']
+        'tags': ['Python', 'Graph Theory', 'Pathfinding', 'Simulation', 'Visualization'],
+        'github_url': 'https://github.com/fabio-biot/flyin'
     },
     {
         'name': 'codexion',
@@ -60,7 +65,8 @@ PROJECTS = [
         'icon': 'fa-atom',
         'category': 'Quantum Compiling Simulation',
         'description': 'Challenge de concurrence basé sur le problème des Philosophes Dînant, avec prévention de deadlocks.',
-        'tags': ['C', 'Multithreading', 'Synchronization', 'pthread', 'Makefile']
+        'tags': ['C', 'Multithreading', 'Synchronization', 'pthread', 'Makefile'],
+        'github_url': 'https://github.com/fabio-biot/codexion'
     },
     {
         'name': 'cardfraud',
@@ -68,7 +74,7 @@ PROJECTS = [
         'title': 'CardFraud - Credit Card Fraud Detection',
         'icon': 'fa-credit-card',
         'category': 'Machine Learning & Fraud Detection',
-        'description': 'Pipeline de détection de fraude bancaire avec XGBoost sur dataset déséquilibré. Optimisation du seuil de décision basé sur le recall.',
+        'description': 'Pipeline de détection de fraude bancaire avec XGBoost sur dataset déséquilibré. Optimisation du seuil basé sur le recall.',
         'tags': ['Python', 'XGBoost', 'Scikit-learn', 'Pandas', 'Data Science', 'Machine Learning'],
         'github_url': 'https://github.com/fabio-biot/CreditCardFraud'
     }
