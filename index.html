@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabio Chaput - Data & Business Analyst | Tech & AI Partner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Fabio Chaput</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#cv">CV</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hello, I'm Fabio Chaput</h1>
+                <p class="subtitle">Data & Business Analyst | Tech & AI Partner</p>
+                <p class="description">
+                    Diplômé SKEMA PGE et École 42, j'allie analyse financière, ingénierie data et IA pour transformer 
+                    des données complexes en leviers décisionnels. Fort de 3 ans d'expérience chez Nestlé, je pilote 
+                    des projets data de bout en bout : des modèles prédictifs (ML/Python) et architectures de dashboards 
+                    (Power BI) jusqu'à la conduite du changement sur le terrain.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-placeholder">
+                    <i class="fas fa-user-astronaut"></i>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Projects</h2>
+                <p class="section-subtitle">Enterprise Data Platforms, AI Systems & Business Analytics Solutions</p>
+            </div>
+
+            <!-- Project Filter -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ai">AI/ML</button>
+                <button class="filter-btn" data-filter="web">Web/App</button>
+                <button class="filter-btn" data-filter="algorithm">Algorithms</button>
+                <button class="filter-btn" data-filter="data">Data Science</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Project 1: nestle_bi_stack -->
+                <div class="project-card" data-tags="data web">
+                    <div class="project-image">
+                        <div class="project-icon" style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); box-shadow: 0 0 30px rgba(99, 102, 241, 0.3);">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>nestle_bi_stack</h3>
+                        <p class="project-category">Enterprise Data Platform & ML</p>
+                        <p class="project-description">
+                            Déploiement d'une dizaine de dashboards Power BI pour 80+ utilisateurs métiers chez Nestlé. 
+                            Développement de modèles ML prédictifs de ventes et automatisations Python/Shell des flux 
+                            multi-sources (Salesforce, Veeva, IQVIA, GERS). Gouvernance des données et conduite du changement.
+                        </p>
+                        <div class="project-tech">
+                            <span>Power BI</span>
+                            <span>Python (ML)</span>
+                            <span>SQL</span>
+                            <span>Gouvernance Data</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-project" style="pointer-events: none; opacity: 0.6;">
+                                <i class="fas fa-lock"></i> Enterprise Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: call_me_maybe -->
+                <div class="project-card" data-tags="ai">
+                    <div class="project-image">
+                        <div class="project-icon llm-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>call_me_maybe</h3>
+                        <p class="project-category">LLM & RAG System</p>
+                        <p class="project-description">
+                            Inférence structurée sur LLM combinant RAG, prompt engineering et contraintes sur logits 
+                            pour générer des appels de fonctions JSON stricts. Utilise Qwen/Qwen3-0.6B avec HuggingFace, 
+                            garantissant des outputs fiables sans framework externe.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>LLM (Qwen3)</span>
+                            <span>RAG</span>
+                            <span>Constrained Decoding</span>
+                            <span>HuggingFace</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/call-me-maybe.html" class="btn-project">
+                                <i class="fas fa-folder-open"></i> View Files
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: quant_leo_fabio -->
+                <div class="project-card" data-tags="ai data">
+                    <div class="project-image">
+                        <div class="project-icon quant-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>quant_leo_fabio</h3>
+                        <p class="project-category">Quant Stack & ML</p>
+                        <p class="project-description">
+                            Engine quantitatif complet : collecte de données financières, scoring alpha par modèles ML 
+                            (XGBoost/CatBoost), backtesting de stratégies et production de rapports quotidiens. 
+                            Architecture modulaire avec pipelines de features, validation walk-forward et neutralisation sectorielle.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>XGBoost/CatBoost</span>
+                            <span>Backtesting</span>
+                            <span>SQLite</span>
+                            <span>Finance</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/quant-leo-fabio.html" class="btn-project">
+                                <i class="fas fa-folder-open"></i> View Files
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: michelin -->
+                <div class="project-card" data-tags="web algorithm">
+                    <div class="project-image">
+                        <div class="project-icon logistics-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>michelin</h3>
+                        <p class="project-category">Logistics VRP Optimization</p>
+                        <p class="project-description">
+                            Plateforme d'optimisation de routes logistiques développée lors d'un hackathon Michelin. 
+                            Distribué sur un solver VRP (Vehicle Routing Problem) pour minimiser l'empreinte CO2 et la 
+                            distance totale. Backend FastAPI, frontend statique et calculs par formule de Haversine.
+                        </p>
+                        <div class="project-tech">
+                            <span>FastAPI</span>
+                            <span>Python</span>
+                            <span>VRP Solver</span>
+                            <span>Haversine</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/michelin.html" class="btn-project">
+                                <i class="fas fa-folder-open"></i> View Files
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4.5: CardFraud -->
+                <div class="project-card" data-tags="ai data">
+                    <div class="project-image">
+                        <div class="project-icon" style="background: linear-gradient(135deg, #ec4899 0%, #be185d 100%); box-shadow: 0 0 30px rgba(236, 72, 153, 0.3);">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>CardFraud</h3>
+                        <p class="project-category">Machine Learning & Fraud Detection</p>
+                        <p class="project-description">
+                            Pipeline de détection de fraude bancaire avec XGBoost sur dataset déséquilibré. 
+                            Optimisation du seuil de décision basé sur le recall pour maximiser la détection des fraudes.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>XGBoost</span>
+                            <span>Scikit-learn</span>
+                            <span>Pandas</span>
+                            <span>Machine Learning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/cardfraud.html" class="btn-project">
+                                <i class="fas fa-folder-open"></i> View Files
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: alpha_ -->
+                <div class="project-card" data-tags="web data">
+                    <div class="project-image">
+                        <div class="project-icon stock-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>alpha_</h3>
+                        <p class="project-category">Financial API & Web Dashboard</p>
+                        <p class="project-description">
+                            Application web et API de données financières temps réel. Architecture FastAPI avec 
+                            récupération de données via yfinance, visualisation d'indicateurs boursiers et gestion 
+                            d'utilisateurs via base de données SQLAlchemy.
+                        </p>
+                        <div class="project-tech">
+                            <span>FastAPI</span>
+                            <span>Python</span>
+                            <span>yfinance</span>
+                            <span>SQLAlchemy</span>
+                            <span>Jinja2</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/alpha-.html" class="btn-project">
+                                <i class="fas fa-folder-open"></i> View Files
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: nespresso_vba_analytics -->
+                <div class="project-card" data-tags="data web">
+                    <div class="project-image">
+                        <div class="project-icon" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); box-shadow: 0 0 30px rgba(16, 185, 129, 0.3);">
+                            <i class="fas fa-file-excel"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>nespresso_vba_analytics</h3>
+                        <p class="project-category">Sales Analytics Tool</p>
+                        <p class="project-description">
+                            Outil de reporting automatique sous Excel VBA déployé en boutique chez Nespresso. 
+                            Conception complète de la solution : de l'architecture aux formules Power Query, 
+                            en passant par l'automatisation des flux et la formation des équipes utilisatrices.
+                        </p>
+                        <div class="project-tech">
+                            <span>Excel VBA</span>
+                            <span>Power Query</span>
+                            <span>Sales Analytics</span>
+                            <span>Conduite du changement</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-project" style="pointer-events: none; opacity: 0.6;">
+                                <i class="fas fa-lock"></i> Enterprise Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Skills & Expertise</h2>
+                <p class="section-subtitle">Tech Stack & Business Capabilities</p>
+            </div>
+            <div class="skills-grid">
+                <!-- Skill Category 1: AI, ML & Data Science -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> AI, ML & Data Science</h3>
+                    <div class="skill-tags">
+                        <span>LLMs</span>
+                        <span>RAG</span>
+                        <span>Machine Learning</span>
+                        <span>XGBoost</span>
+                        <span>CatBoost</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>Scikit-learn</span>
+                        <span>Feature Engineering</span>
+                        <span>Backtesting</span>
+                        <span>Constrained Decoding</span>
+                    </div>
+                </div>
+                
+                <!-- Skill Category 2: Business Intelligence & Analytics -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-bar"></i> Business Intelligence & Analytics</h3>
+                    <div class="skill-tags">
+                        <span>Power BI</span>
+                        <span>Power Query</span>
+                        <span>Power Pivot</span>
+                        <span>Excel</span>
+                        <span>VBA</span>
+                        <span>Power Automate</span>
+                        <span>SharePoint</span>
+                        <span>Power BI Online</span>
+                    </div>
+                </div>
+                
+                <!-- Skill Category 3: Backend & Data Engineering -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Backend & Data Engineering</h3>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>FastAPI</span>
+                        <span>PostgreSQL</span>
+                        <span>SQLite</span>
+                        <span>SQLAlchemy</span>
+                        <span>Pydantic</span>
+                        <span>Jinja2</span>
+                        <span>Data Pipelines</span>
+                        <span>Shell</span>
+                        <span>Linux</span>
+                    </div>
+                </div>
+                
+                <!-- Skill Category 4: Software Engineering & Core CS -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-cog"></i> Software Engineering & Core CS</h3>
+                    <div class="skill-tags">
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>Docker</span>
+                        <span>Makefile</span>
+                        <span>System Architecture</span>
+                        <span>Algorithmie</span>
+                        <span>Multithreading</span>
+                        <span>Concurrency</span>
+                    </div>
+                </div>
+                
+                <!-- Skill Category 5: Business & Management -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-users"></i> Business & Management</h3>
+                    <div class="skill-tags">
+                        <span>Cadrage besoin métier</span>
+                        <span>Conduite du changement</span>
+                        <span>Formation équipes</span>
+                        <span>Finance</span>
+                        <span>Business Partnering</span>
+                        <span>Gouvernance Data</span>
+                        <span>Pilotage performance</span>
+                        <span>Relation client</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv" class="cv-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Curriculum Vitae</h2>
+                <p class="section-subtitle">Data & Business Analytics | Finance | Software Engineering</p>
+            </div>
+
+            <!-- Profile Summary Card -->
+            <div class="cv-profile-card">
+                <div class="cv-profile-header">
+                    <h3><i class="fas fa-user-circle"></i> Profil & Objectifs</h3>
+                    <div class="cv-languages">
+                        <span class="badge"><i class="fas fa-globe"></i> Français (Natif)</span>
+                        <span class="badge"><i class="fas fa-globe"></i> Anglais (C1 Courant)</span>
+                    </div>
+                </div>
+                <p class="cv-profile-text">
+                    Diplômé Bac+5 <strong>SKEMA Business School</strong> (Data Analytics & Finance) et <strong>École 42</strong>, avec 3 ans d'expérience chez Nestlé à l'interface entre équipes métiers, IT et terrain. Habitué à gérer des relations avec des interlocuteurs variés (Finance, Sales, Marketing, réseau de force de vente), à former et accompagner des équipes à l'adoption de nouveaux outils (formation du réseau de force de vente aux outils BI, aux plans d'actions sectoriels et au nouveau CRM), et à piloter des projets de bout en bout jusqu'à leur adoption à l'échelle (dashboards Power BI utilisés quotidiennement par 80+ utilisateurs).
+                </p>
+                <p class="cv-profile-text">
+                    Esprit structuré et compétitif, sens du résultat, à l'aise dans des environnements exigeants où l'apprentissage continu est un objectif central. Motivé pour évoluer vers un rôle alliant relation clients, encadrement d'équipe et pilotage de la performance.
+                </p>
+            </div>
+
+            <div class="cv-grid">
+                <!-- Professional Experience Column -->
+                <div class="cv-block">
+                    <h3><i class="fas fa-briefcase"></i> Expérience Professionnelle</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="timeline-date">2022 – 2025</span>
+                            <h4>Data & Business Analyst (Alternance)</h4>
+                            <p class="timeline-institution">Nestlé France – Infant Nutrition</p>
+                            <ul class="cv-list">
+                                <li><strong>Formation & Accompagnement :</strong> Animation de sessions de formation sur les nouveaux outils BI, les plans d'actions sectoriels et l'adoption du nouveau CRM pour le réseau de force de vente — montée en compétence des équipes terrain.</li>
+                                <li><strong>Relation Inter-métiers :</strong> Collaboration étroite avec les équipes Finance, Sales, Marketing et Contrôle de gestion pour cadrer les exigences et prioriser les livrables.</li>
+                                <li><strong>Dashboards & Adoption :</strong> Conception et déploiement de bout en bout d'une dizaine de dashboards Power BI, adoptés quotidiennement par plus de 80 utilisateurs métiers.</li>
+                                <li><strong>Business Partnering :</strong> Interface entre les équipes métiers et IT/data, conduite du changement pour assurer l'appropriation durable des outils.</li>
+                                <li><strong>Automatisations :</strong> Développement de scripts Python et Shell pour des gains significatifs de productivité et de fiabilité.</li>
+                                <li><strong>Pilotage & ML :</strong> Développement d'un modèle prédictif en Python (Machine Learning) pour améliorer les prévisions commerciales et l'analyse des écarts budgétaires.</li>
+                                <li><strong>Gouvernance des données :</strong> Contrôles qualité sur des flux multi-sources (Salesforce, Veeva, IQVIA, GERS), documentation des règles de gestion et du data lineage.</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="timeline-date">2022 – 2023</span>
+                            <h4>Sales & CRM Assistant (Alternance)</h4>
+                            <p class="timeline-institution">Nestlé Nespresso – Nice</p>
+                            <ul class="cv-list">
+                                <li><strong>Reporting Automatisé :</strong> Conception et déploiement d'un outil de reporting automatisé sous Excel VBA (ownership complet de la conception à la mise en production).</li>
+                                <li><strong>Accompagnement :</strong> Formation et suivi des équipes boutique pour l'adoption de l'outil.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education & Projects Column -->
+                <div class="cv-block">
+                    <h3><i class="fas fa-graduation-cap"></i> Formation</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="timeline-date">2025 – Présent</span>
+                            <h4>Cursus Informatique</h4>
+                            <p class="timeline-institution">École 42</p>
+                            <p>C, C++, Python, SQL, Shell, Linux, algorithmie, IA générative (LLM, RAG) — Formation intense par projets en peer-learning.</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="timeline-date">2022 – 2025</span>
+                            <h4>Programme Grande École (Bac+5)</h4>
+                            <p class="timeline-institution">SKEMA Business School</p>
+                            <p>Spécialisation <strong>Finance & Data Analytics</strong>. Cours avancés en finance, statistiques, machine learning et data analytics.</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="timeline-date">2020 – 2022</span>
+                            <h4>DUT Techniques de Commercialisation</h4>
+                            <p class="timeline-institution">IUT</p>
+                            <p>Apprentissage Vente en boutique Nespresso.</p>
+                        </div>
+                    </div>
+
+                    <!-- Projects Block -->
+                    <div class="cv-subblock">
+                        <h3><i class="fas fa-laptop-code"></i> Projets IA & Data Clés</h3>
+                        <div class="project-mini-cards">
+                            <div class="mini-card">
+                                <h4>Function-Calling & RAG sur LLM <span class="mini-tag">École 42 (2025)</span></h4>
+                                <p>Inférence structurée sur modèle Qwen 0.6B combinant RAG, prompt engineering et contraintes aux logits. Garantit des outputs JSON fiables sans framework externe (Python, Hugging Face).</p>
+                            </div>
+                            <div class="mini-card">
+                                <h4>Détection de Fraudes <span class="mini-tag">2024</span></h4>
+                                <p>Pipeline de classification en Python (Random Forest, XGBoost), feature engineering et évaluation des performances (AUC-ROC).</p>
+                            </div>
+                            <div class="mini-card">
+                                <h4>Simulation & Backtesting Actions <span class="mini-tag">2024</span></h4>
+                                <p>Modélisation de stratégies d'investissement en finance quantitative, analyse de performance et optimisation de portefeuille (Python).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p class="section-subtitle">Let's build something amazing together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>I'm always open to discuss new projects, collaboration opportunities, or just to connect with fellow developers and data scientists.</p>
+                    <p>Feel free to reach out through any of the channels below.</p>
+                    <div class="social-links">
+                        <a href="mailto:chaput.fabio@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://github.com/fabio-biot" class="social-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/fabio-chaput-270044213/" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Fabio Chaput. All rights reserved.</p>
+            <p>Built with <i class="fas fa-heart"></i> and passion for coding</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

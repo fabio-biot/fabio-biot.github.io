@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>call_me_maybe - LLM & RAG System - Fabio Chaput Portfolio</title>
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="container">
+    <a href="../index.html" class="logo">Fabio Chaput</a>
+    <div class="nav-links">
+      <a href="../index.html#home">Home</a>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#skills">Skills</a>
+      <a href="../index.html#cv">CV</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+    <div class="hamburger"><i class="fas fa-bars"></i></div>
+  </div>
+</nav>
+
+<div style="max-width:1200px;margin:0 auto;padding:2rem;">
+  <a href="../index.html" style="display:inline-flex;align-items:center;gap:0.5rem;margin-bottom:2rem;color:var(--text-secondary);">
+    <i class="fas fa-arrow-left"></i> Back to Projects
+  </a>
+  
+  <div style="margin-bottom:2rem;padding-bottom:2rem;border-bottom:1px solid var(--border-color);">
+    <div style="font-size:3rem;color:var(--primary-color);margin-bottom:1rem;">
+      <i class="fas fa-robot"></i>
+    </div>
+    <h1>call_me_maybe - LLM & RAG System</h1>
+    <p style="color:var(--primary-color);font-size:0.9rem;font-weight:600;margin-bottom:1rem;text-transform:uppercase;letter-spacing:0.5px;">
+      LLM & RAG System
+    </p>
+    <p style="font-size:0.95rem;margin-bottom:1.5rem;color:var(--text-secondary);">
+      Inférence structurée sur LLM combinant RAG, prompt engineering et contraintes sur logits pour générer des appels de fonctions JSON stricts.
+    </p>
+    <div style="display:flex;gap:2rem;flex-wrap:wrap;margin-bottom:1rem;">
+      <div style="display:flex;align-items:center;gap:0.5rem;color:var(--text-secondary);">
+        <i class="fas fa-folder" style="color:var(--primary-color);"></i>
+        <span>5 Directories</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:0.5rem;color:var(--text-secondary);">
+        <i class="fas fa-file" style="color:var(--primary-color);"></i>
+        <span>12 Files</span>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1rem;">
+      <span>Python</span><span>LLM (Qwen3)</span><span>RAG</span><span>Constrained Decoding</span><span>HuggingFace</span><span>Pydantic</span>
+    </div>
+    <div class="project-links">
+      <a href="../index.html" class="btn-project">
+        <i class="fas fa-arrow-left"></i> Back to Projects
+      </a>
+    </div>
+  </div>
+  
+  <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:var(--radius-xl);overflow:hidden;margin-top:2rem;">
+    <div style="padding:1rem 1.5rem;background:var(--bg-darker);border-bottom:1px solid var(--border-color);display:flex;align-items:center;gap:0.5rem;">
+      <i class="fas fa-folder-open"></i>
+      <span>Project Files</span>
+    </div>
+    <ul style="list-style:none;padding:0;margin:0;">
+        <li class='tree-item file'>
+    <a href='../../../call_me_maybe/call_me_maybe/Makefile' class='tree-file-link' download>
+      <i class='fas fa-cog tree-icon' style='color:#428850'></i>
+      <span class='tree-name'>Makefile</span>
+      <span class='tree-size'>1.0 KB</span>
+    </a>
+  </li>
+  <li class='tree-item file'>
+    <a href='../../../call_me_maybe/call_me_maybe/README.md' class='tree-file-link' download>
+      <i class='fas fa-file-alt tree-icon' style='color:#083FA1'></i>
+      <span class='tree-name'>README.md</span>
+      <span class='tree-size'>5.3 KB</span>
+    </a>
+  </li>
+  <li class='tree-item directory'>
+    <div class='tree-header' onclick='toggleDir(this)'>
+      <i class='fas fa-folder tree-icon'></i>
+      <span class='tree-name'>data</span>
+      <i class='fas fa-chevron-right tree-toggle'></i>
+    </div>
+    <ul class='tree-children' style='display:none;'>
+    <li class='tree-item directory'>
+      <div class='tree-header' onclick='toggleDir(this)'>
+        <i class='fas fa-folder tree-icon'></i>
+        <span class='tree-name'>input</span>
+        <i class='fas fa-chevron-right tree-toggle'></i>
+      </div>
+      <ul class='tree-children' style='display:none;'>
+      <li class='tree-item file'>
+        <a href='../../../call_me_maybe/call_me_maybe/data/input/function_calling_tests.json' class='tree-file-link' download>
+          <i class='fas fa-file-code tree-icon' style='color:#292929'></i>
+          <span class='tree-name'>function_calling_tests.json</span>
+          <span class='tree-size'>685 B</span>
+        </a>
+      </li>
+      <li class='tree-item file'>
+        <a href='../../../call_me_maybe/call_me_maybe/data/input/functions_definition.json' class='tree-file-link' download>
+          <i class='fas fa-file-code tree-icon' style='color:#292929'></i>
+          <span class='tree-name'>functions_definition.json</span>
+          <span class='tree-size'>1.6 KB</span>
+        </a>
+      </li>
+      </ul>
+    </li>
+    </ul>
+  </li>
+  <li class='tree-item directory'>
+    <div class='tree-header' onclick='toggleDir(this)'>
+      <i class='fas fa-folder tree-icon'></i>
+      <span class='tree-name'>llm_sdk</span>
+      <i class='fas fa-chevron-right tree-toggle'></i>
+    </div>
+    <ul class='tree-children' style='display:none;'>
+    <li class='tree-item file'>
+      <a href='../../../call_me_maybe/call_me_maybe/llm_sdk/__init__.py' class='tree-file-link' download>
+        <i class='fas fa-file-code tree-icon' style='color:#3572A5'></i>
+        <span class='tree-name'>__init__.py</span>
+        <span class='tree-size'>4.6 KB</span>
+      </a>
+    </li>
+    <li class='tree-item directory'>
+      <div class='tree-header' onclick='toggleDir(this)'>
+        <i class='fas fa-folder tree-icon'></i>
+        <span class='tree-name'>llm_sdk</span>
+        <i class='fas fa-chevron-right tree-toggle'></i>
+      </div>
+      <ul class='tree-children' style='display:none;'>
+      <li class='tree-item file'>
+        <a href='../../../call_me_maybe/call_me_maybe/llm_sdk/llm_sdk/__init__.py' class='tree-file-link' download>
+          <i class='fas fa-file-code tree-icon' style='color:#3572A5'></i>
+          <span class='tree-name'>__init__.py</span>
+          <span class='tree-size'>4.6 KB</span>
+        </a>
+      </li>
+      </ul>
+    </li>
+    </ul>
+  </li>
+  <li class='tree-item file'>
+    <div class='tree-file'>
+      <i class='fas fa-cog tree-icon' style='color:#9C4121'></i>
+      <span class='tree-name'>pyproject.toml</span>
+      <span class='tree-size'>437 B</span>
+    </div>
+  </li>
+  <li class='tree-item directory'>
+    <div class='tree-header' onclick='toggleDir(this)'>
+      <i class='fas fa-folder tree-icon'></i>
+      <span class='tree-name'>src</span>
+      <i class='fas fa-chevron-right tree-toggle'></i>
+    </div>
+    <ul class='tree-children' style='display:none;'>
+    <li class='tree-item file'>
+      <a href='../../../call_me_maybe/call_me_maybe/src/__main__.py' class='tree-file-link' download>
+        <i class='fas fa-file-code tree-icon' style='color:#3572A5'></i>
+        <span class='tree-name'>__main__.py</span>
+        <span class='tree-size'>6.9 KB</span>
+      </a>
+    </li>
+    <li class='tree-item file'>
+      <a href='../../../call_me_maybe/call_me_maybe/src/batch_runner.py' class='tree-file-link' download>
+        <i class='fas fa-file-code tree-icon' style='color:#3572A5'></i>
+        <span class='tree-name'>batch_runner.py</span>
+        <span class='tree-size'>4.0 KB</span>
+      </a>
+    </li>
+    <li class='tree-item file'>
+      <a href='../../../call_me_maybe/call_me_maybe/src/ex.json' class='tree-file-link' download>
+        <i class='fas fa-file-code tree-icon' style='color:#292929'></i>
+        <span class='tree-name'>ex.json</span>
+        <span class='tree-size'>56 B</span>
+      </a>
+    </li>
+    <li class='tree-item file'>
+      <a href='../../../call_me_maybe/call_me_maybe/src/main_test.py' class='tree-file-link' download>
+        <i class='fas fa-file-code tree-icon' style='color:#3572A5'></i>
+        <span class='tree-name'>main_test.py</span>
+        <span class='tree-size'>1.1 KB</span>
+      </a>
+    </li>
+    <li class='tree-item file'>
+      <a href='../../../call_me_maybe/call_me_maybe/src/models.py' class='tree-file-link' download>
+        <i class='fas fa-file-code tree-icon' style='color:#3572A5'></i>
+        <span class='tree-name'>models.py</span>
+        <span class='tree-size'>356 B</span>
+      </a>
+    </li>
+    </ul>
+  </li>
+
+    </ul>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 Fabio Chaput. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+<script>
+function toggleDir(el) {
+  var children = el.nextElementSibling;
+  if (children.style.display === 'none') {
+    children.style.display = 'block';
+  } else {
+    children.style.display = 'none';
+  }
+}
+document.addEventListener('DOMContentLoaded', function() {
+  var headers = document.querySelectorAll('.tree-header');
+  headers.forEach(function(h) {
+    var children = h.nextElementSibling;
+    if (children) children.style.display = 'block';
+  });
+});
+</script>
+</body>
+</html>
