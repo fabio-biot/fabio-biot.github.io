@@ -110,13 +110,22 @@ Edit `styles.css` to customize:
 
 ### Add More Projects
 To add a new project:
-1. Add a new project card in `index.html` under the Projects Grid section
+
+#### Option A: Project with File Browser (for private/enterprise projects)
+1. Add a new project card in `index.html` under the Projects Grid section with `href="projects/your-project.html"`
 2. Follow the existing card structure with appropriate tags for filtering
 3. Add a unique icon from Font Awesome
-4. Add the project to the `PROJECTS` list in `generate_project_pages.py`
-5. Run `python3 generate_project_pages.py` to create the project page
+4. Add the project to the `PROJECTS` list in `generate_project_pages.py` (without `github_url` field)
+5. Run `python3 generate_project_pages.py` to create the project page with file browser
 
-Alternatively, edit `generate_project_pages.py` to add your project to the `PROJECTS` list, then run it to automatically create both the project page and update the index.html link.
+#### Option B: Open Source Project with GitHub Link
+1. Add a new project card in `index.html` under the Projects Grid section with `href="https://github.com/..."` and `target="_blank"`
+2. Follow the existing card structure with appropriate tags for filtering
+3. Add a unique icon from Font Awesome
+4. Add the project to the `PROJECTS` list in `generate_project_pages.py` WITH a `github_url` field
+5. No project page will be generated (users will go directly to GitHub)
+
+Note: Projects with a `github_url` field in `generate_project_pages.py` will NOT have a file browser page generated.
 
 ## File Structure
 

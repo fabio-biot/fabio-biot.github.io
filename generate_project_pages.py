@@ -69,7 +69,8 @@ PROJECTS = [
         'icon': 'fa-credit-card',
         'category': 'Machine Learning & Fraud Detection',
         'description': 'Pipeline de détection de fraude bancaire avec XGBoost sur dataset déséquilibré. Optimisation du seuil de décision basé sur le recall.',
-        'tags': ['Python', 'XGBoost', 'Scikit-learn', 'Pandas', 'Data Science', 'Machine Learning']
+        'tags': ['Python', 'XGBoost', 'Scikit-learn', 'Pandas', 'Data Science', 'Machine Learning'],
+        'github_url': 'https://github.com/fabio-biot/CreditCardFraud'
     }
 ]
 
@@ -316,13 +317,16 @@ def main():
     out_dir.mkdir(parents=True, exist_ok=True)
     
     for p in PROJECTS:
+        if 'github_url' in p:
+            print(f"Skipped {p['name']} (has github_url)")
+            continue
         fname = f"{p['name'].replace('_', '-')}.html"
         fpath = out_dir / fname
         with open(fpath, 'w', encoding='utf-8') as f:
             f.write(gen_page(p))
         print(f"Generated: {fname}")
     
-    print(f"\nDone! {len(PROJECTS)} pages created in {out_dir}")
+    print(f"\nDone! {len([p for p in PROJECTS if 'github_url' not in p])} pages created in {out_dir}")
 
 
 if __name__ == '__main__':
