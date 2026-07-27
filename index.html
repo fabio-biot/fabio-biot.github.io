@@ -29,23 +29,21 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Hello, I'm Fabio Chaput</h1>
-                <p class="subtitle">Data & Business Analyst | Tech & AI Partner</p>
+                <h1>Hi, I'm Fabio Chaput</h1>
+                <p class="subtitle">Data & Business Analyst | AI/ML Engineer</p>
                 <p class="description">
-                    Diplômé SKEMA PGE et École 42, j'allie analyse financière, ingénierie data et IA pour transformer 
-                    des données complexes en leviers décisionnels. Fort de 3 ans d'expérience chez Nestlé, je pilote 
-                    des projets data de bout en bout : des modèles prédictifs (ML/Python) et architectures de dashboards 
-                    (Power BI) jusqu'à la conduite du changement sur le terrain.
+                    I build <strong>AI systems</strong> and <strong>data platforms</strong> that drive business decisions. <br>
+                    3 years at Nestlé, <strong>SKEMA + 42</strong> graduate.
                 </p>
                 <div class="cta-buttons">
                     <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="Fabio_Chaput_CV.pdf" class="btn btn-cv" download>
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
                 </div>
             </div>
             <div class="hero-image">
-                <div class="profile-placeholder">
-                    <i class="fas fa-user-astronaut"></i>
-                </div>
+                <img src="images/profile.jpg" alt="Fabio Chaput - Data & Business Analyst" class="profile-img">
             </div>
         </div>
         <div class="scroll-down">
@@ -72,39 +70,36 @@
 
             <!-- Projects Grid -->
             <div class="projects-grid">
-                <!-- Project 1: nestle_bi_stack (Enterprise) -->
-                <div class="project-card" data-tags="data web">
+                <!-- Project 1: Nestlé BI Stack (FEATURED) -->
+                <div class="project-card featured" data-tags="data web">
+                    <div class="featured-badge">Featured</div>
                     <div class="project-image">
                         <div class="project-icon" style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); box-shadow: 0 0 30px rgba(99, 102, 241, 0.3);">
-                            <i class="fas fa-chart-line"></i>
+                            <i class="fas fa-users"></i>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>nestle_bi_stack</h3>
-                        <p class="project-category">Enterprise Data Platform & ML</p>
+                        <h3>Nestlé BI Stack</h3>
+                        <p class="project-category">Enterprise Data Platform</p>
                         <p class="project-description">
-                            Déploiement d'une dizaine de dashboards Power BI pour 80+ utilisateurs métiers chez Nestlé. 
-                            Développement de modèles ML prédictifs de ventes et automatisations Python/Shell.
+                            Deployed <strong>10+ Power BI dashboards</strong> for <strong>80+ daily users</strong> at Nestlé. 
+                            Developed ML predictive sales models and Python/Shell automations.
                         </p>
                         <div class="project-highlights">
                             <div class="highlight-item">
                                 <i class="fas fa-users"></i>
-                                <span><strong>80+ utilisateurs</strong> quotidiens</span>
+                                <span><strong>80+ daily users</strong></span>
                             </div>
                             <div class="highlight-item">
                                 <i class="fas fa-database"></i>
-                                <span>Intégration Salesforce, Veeva, IQVIA, GERS</span>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-chart-bar"></i>
-                                <span>Modèles prédictifs de ventes</span>
+                                <span>Salesforce, Veeva, IQVIA, GERS integration</span>
                             </div>
                         </div>
                         <div class="project-tech">
-                            <span>Power BI</span>
-                            <span>Python (ML)</span>
-                            <span>SQL</span>
-                            <span>Gouvernance Data</span>
+                            <span class="tech-badge powerbi">Power BI</span>
+                            <span class="tech-badge python">Python</span>
+                            <span class="tech-badge sql">SQL</span>
+                            <span class="tech-badge data-governance">Data Governance</span>
                         </div>
                         <div class="project-links">
                             <a href="#" class="btn-project enterprise-btn" style="pointer-events: none; opacity: 0.6;">
@@ -114,8 +109,9 @@
                     </div>
                 </div>
 
-                <!-- Project 2: call_me_maybe -->
-                <div class="project-card" data-tags="ai">
+                <!-- Project 2: call_me_maybe (FEATURED) -->
+                <div class="project-card featured" data-tags="ai">
+                    <div class="featured-badge">Featured</div>
                     <div class="project-image">
                         <div class="project-icon" style="background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%); box-shadow: 0 0 30px rgba(139, 92, 246, 0.3);">
                             <i class="fas fa-robot"></i>
@@ -125,28 +121,28 @@
                         <h3>call_me_maybe</h3>
                         <p class="project-category">LLM & RAG System</p>
                         <p class="project-description">
-                            Système d'inférence structurée sur LLM combinant RAG, prompt engineering et contraintes sur logits pour générer des appels de fonctions JSON stricts.
+                            Structured inference system on LLMs combining RAG, prompt engineering, and logit constraints to generate strict JSON function calls.
                         </p>
                         <div class="project-highlights">
                             <div class="highlight-item">
                                 <i class="fas fa-brain"></i>
-                                <span><strong>Modèle:</strong> Qwen3-0.6B</span>
+                                <span><strong>Model:</strong> Qwen3-0.6B</span>
                             </div>
                             <div class="highlight-item">
                                 <i class="fas fa-code"></i>
-                                <span>Outputs JSON stricts garantis</span>
+                                <span>Guaranteed strict JSON outputs</span>
                             </div>
                             <div class="highlight-item">
                                 <i class="fas fa-shield-alt"></i>
-                                <span>Sans framework externe</span>
+                                <span>No external framework</span>
                             </div>
                         </div>
                         <div class="project-tech">
-                            <span>Python</span>
-                            <span>LLM (Qwen3)</span>
-                            <span>RAG</span>
-                            <span>Constrained Decoding</span>
-                            <span>HuggingFace</span>
+                            <span class="tech-badge python">Python</span>
+                            <span class="tech-badge llm">LLM</span>
+                            <span class="tech-badge rag">RAG</span>
+                            <span class="tech-badge huggingface">HuggingFace</span>
+                            <span class="tech-badge constrained-decoding">Constrained Decoding</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/fabio-biot/call_me_maybe" class="btn-project" target="_blank">
@@ -156,39 +152,37 @@
                     </div>
                 </div>
 
-                <!-- Project 3: quant_leo_fabio -->
-                <div class="project-card" data-tags="ai data">
+                <!-- Project 3: quant_leo_fabio (FEATURED) -->
+                <div class="project-card featured" data-tags="ai data">
+                    <div class="featured-badge">Featured</div>
                     <div class="project-image">
                         <div class="project-icon" style="background: linear-gradient(135deg, #16a34a 0%, #15803d 100%); box-shadow: 0 0 30px rgba(22, 163, 74, 0.3);">
                             <i class="fas fa-calculator"></i>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>quant_leo_fabio</h3>
+                        <h3>Quant Leo Fabio</h3>
                         <p class="project-category">Quant Stack & ML</p>
                         <p class="project-description">
-                            Engine quantitatif complet : collecte de données financières, scoring alpha par modèles ML, backtesting de stratégies.
+                            Complete quantitative engine: financial data collection, ML alpha scoring, and strategy backtesting.
                         </p>
                         <div class="project-highlights">
                             <div class="highlight-item">
                                 <i class="fas fa-chart-line"></i>
-                                <span><strong>Scoring alpha</strong> ML</span>
+                                <span><strong>ML Alpha Scoring</strong></span>
                             </div>
                             <div class="highlight-item">
                                 <i class="fas fa-calendar-alt"></i>
-                                <span>Backtesting de stratégies</span>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-file-alt"></i>
-                                <span>Rapports quotidiens</span>
+                                <span>Strategy backtesting</span>
                             </div>
                         </div>
                         <div class="project-tech">
-                            <span>Python</span>
-                            <span>XGBoost/CatBoost</span>
-                            <span>Backtesting</span>
-                            <span>SQLite</span>
-                            <span>Finance</span>
+                            <span class="tech-badge python">Python</span>
+                            <span class="tech-badge xgboost">XGBoost</span>
+                            <span class="tech-badge catboost">CatBoost</span>
+                            <span class="tech-badge backtesting">Backtesting</span>
+                            <span class="tech-badge sqlite">SQLite</span>
+                            <span class="tech-badge finance">Finance</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/fabio-biot/Quant_leo_fabio" class="btn-project" target="_blank">
